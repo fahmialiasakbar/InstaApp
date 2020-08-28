@@ -13,12 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('posts','PostController@index');
-Route::get('newpost','PostController@new');
+Route::get('/','PostController@index');
+Route::get('/home','PostController@index');
+Route::get('/posts','PostController@index');
+Route::get('/detail/{id}', 'PostController@detail');
+Route::get('/newpost','PostController@new');
+Route::post('/post/insert', 'PostController@insert');
+
+Route::post('/like', 'PostController@like');
+Route::post('/unlike', 'PostController@unlike');
+Route::post('/comment', 'PostController@comment');
+
+Route::get('/myprofile', 'ProfileController@index');
+Route::get('/profile/{id}', 'ProfileController@profile');

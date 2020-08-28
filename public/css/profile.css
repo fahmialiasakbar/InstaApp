@@ -1,0 +1,5 @@
+.image-grid {
+    height: 20em;
+    width: 100%;
+    object-fit: cover;
+}

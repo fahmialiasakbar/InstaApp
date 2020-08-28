@@ -1,0 +1,85 @@
+
+.card {
+    border: 0;
+    border-radius: 15px;
+}
+
+.card > .image {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    /* padding-top: 56.25%; */
+    background-color: red;
+}
+
+.icon-post {
+    font-size: 28px
+}
+
+.icon-like {
+    float: left;
+    padding: 10px;
+}
+
+.icon-comment {
+    float: left;
+    padding: 10px;
+}
+
+.icon-red {
+    color:red;
+}
+
+.icon-bookmark {
+    float: right;
+    padding: 10px;
+}
+
+.icon-header {
+    font-size: 1.4em;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+a, a:hover, a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+.likes,.comments  {
+    font-weight: 600;
+}
+
+.comment-username {
+    font-weight: 600;
+}
+
+.input-comment {
+    width: 100%;
+}
+
+.input-comment > input {
+    border: 0;
+    width: 80%;
+}
+
+.input-comment > input:focus{
+    outline: none;
+}
+
+
+.input-comment > span {
+    font-weight: 600;
+    color: #1234f3;
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.card > .comments {
+    text-align: center;
+}
